@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm:*)",
+      "Bash(brew install:*)",
+      "Bash(node:*)",
+      "Bash(npx storybook@latest:*)",
+      "Bash(/Users/madhouse/projects/comp-lib/node_modules/.bin/esbuild:*)",
+      "Bash(node_modules/.bin/tsc:*)",
+      "Bash(node_modules/.bin/vite:*)"
+    ]
+  }
+}

@@ -1,0 +1,323 @@
+[07:58:59.336] [INFO] Initializing Storybook
+[07:58:59.620] [DEBUG] Getting package.json info for /Users/madhouse/projects/comp-lib/package.json...
+[07:58:59.620] [DEBUG] Getting CLI versions from NPM for storybook...
+[07:58:59.620] [DEBUG] Executing command: pnpm info storybook version
+[07:59:00.389] [INFO] Adding Storybook version 10.3.6 to your project
+[07:59:00.390] [DEBUG] Project type detected: react
+[07:59:00.390] [DEBUG] Using cached package.json for /Users/madhouse/projects/comp-lib/package.json...
+[07:59:00.390] [DEBUG] Using cached package.json for /Users/madhouse/projects/comp-lib/package.json...
+[07:59:00.390] [INFO] Framework detected: react-vite
+[07:59:00.390] [DEBUG] Getting installed version for vitest...
+[07:59:00.391] [DEBUG] Executing command: pnpm list "vitest" --json --depth=99
+[07:59:00.688] [DEBUG] No installations found for vitest
+[07:59:00.688] [DEBUG] Getting installed version for msw...
+[07:59:00.688] [DEBUG] Executing command: pnpm list "msw" --json --depth=99
+[07:59:00.985] [DEBUG] No installations found for msw
+[07:59:00.987] [DEBUG] Using cached package.json for /Users/madhouse/projects/comp-lib/package.json...
+[07:59:00.987] [DEBUG] Using cached package.json for /Users/madhouse/projects/comp-lib/package.json...
+[07:59:00.987] [DEBUG] Using cached package.json for /Users/madhouse/projects/comp-lib/package.json...
+[07:59:00.987] [DEBUG] Using cached version for storybook...
+[07:59:00.987] [DEBUG] Getting CLI versions from NPM for @storybook/react-vite...
+[07:59:00.987] [DEBUG] Executing command: pnpm info @storybook/react-vite version
+[07:59:00.988] [DEBUG] Getting CLI versions from NPM for @chromatic-com/storybook...
+[07:59:00.988] [DEBUG] Executing command: pnpm info @chromatic-com/storybook version
+[07:59:00.989] [DEBUG] Getting CLI versions from NPM for @storybook/addon-vitest...
+[07:59:00.989] [DEBUG] Executing command: pnpm info @storybook/addon-vitest version
+[07:59:00.990] [DEBUG] Getting CLI versions from NPM for @storybook/addon-a11y...
+[07:59:00.990] [DEBUG] Executing command: pnpm info @storybook/addon-a11y version
+[07:59:00.991] [DEBUG] Getting CLI versions from NPM for @storybook/addon-docs...
+[07:59:00.991] [DEBUG] Executing command: pnpm info @storybook/addon-docs version
+[07:59:00.992] [DEBUG] Getting CLI versions from NPM for @storybook/addon-onboarding...
+[07:59:00.992] [DEBUG] Executing command: pnpm info @storybook/addon-onboarding version
+[07:59:02.814] [INFO] - Configuring main.ts
+[07:59:02.815] [INFO] - Configuring preview.ts
+[07:59:02.815] [INFO] - Adding Storybook command to package.json
+[07:59:02.815] [DEBUG] Getting package.json info for /Users/madhouse/projects/comp-lib/package.json...
+[07:59:02.815] [DEBUG] Using cached package.json for /Users/madhouse/projects/comp-lib/package.json...
+[07:59:02.816] [DEBUG] Using cached package.json for /Users/madhouse/projects/comp-lib/package.json...
+[07:59:02.816] [INFO] - Copying framework templates
+[07:59:02.822] [DEBUG] Executing command: npm config get registry -ws=false -iwr
+[07:59:03.092] [INFO] Storybook configuration generated
+[07:59:03.092] [DEBUG] Using cached package.json for /Users/madhouse/projects/comp-lib/package.json...
+[07:59:03.092] [DEBUG] Using cached installed version for vitest...
+[07:59:03.092] [DEBUG] Getting installed version for @vitest/coverage-v8...
+[07:59:03.092] [DEBUG] Executing command: pnpm list "@vitest/coverage-v8" --json --depth=99
+[07:59:03.402] [DEBUG] No installations found for @vitest/coverage-v8
+[07:59:03.402] [DEBUG] Getting installed version for @vitest/coverage-istanbul...
+[07:59:03.402] [DEBUG] Executing command: pnpm list "@vitest/coverage-istanbul" --json --depth=99
+[07:59:03.700] [DEBUG] No installations found for @vitest/coverage-istanbul
+[07:59:03.700] [INFO] Adding devDependencies:
+- storybook@^10.3.6
+- @storybook/react-vite@^10.3.6
+- @chromatic-com/storybook@^5.1.2
+- @storybook/addon-vitest@^10.3.6
+- @storybook/addon-a11y@^10.3.6
+- @storybook/addon-docs@^10.3.6
+- @storybook/addon-onboarding@^10.3.6
+- vitest
+- playwright
+- @vitest/browser-playwright
+- @vitest/coverage-v8
+[07:59:03.700] [DEBUG] Using cached package.json for /Users/madhouse/projects/comp-lib/package.json...
+[07:59:03.700] [DEBUG] Using cached version for storybook...
+[07:59:03.700] [DEBUG] Using cached version for @storybook/react-vite...
+[07:59:03.700] [DEBUG] Using cached version for @chromatic-com/storybook...
+[07:59:03.700] [DEBUG] Using cached version for @storybook/addon-vitest...
+[07:59:03.700] [DEBUG] Using cached version for @storybook/addon-a11y...
+[07:59:03.700] [DEBUG] Using cached version for @storybook/addon-docs...
+[07:59:03.700] [DEBUG] Using cached version for @storybook/addon-onboarding...
+[07:59:03.700] [DEBUG] Getting CLI versions from NPM for vitest...
+[07:59:03.700] [DEBUG] Executing command: pnpm info vitest version
+[07:59:04.140] [DEBUG] Getting CLI versions from NPM for playwright...
+[07:59:04.140] [DEBUG] Executing command: pnpm info playwright version
+[07:59:04.988] [DEBUG] Getting CLI versions from NPM for @vitest/browser-playwright...
+[07:59:04.988] [DEBUG] Executing command: pnpm info @vitest/browser-playwright version
+[07:59:05.392] [DEBUG] Getting CLI versions from NPM for @vitest/coverage-v8...
+[07:59:05.392] [DEBUG] Executing command: pnpm info @vitest/coverage-v8 version
+[07:59:05.854] [DEBUG] Using cached package.json for /Users/madhouse/projects/comp-lib/package.json...
+[07:59:05.855] [INFO] Dependencies added to package.json
+[07:59:05.855] [INFO] Installing dependencies...
+[07:59:05.855] [INFO] Installing dependencies...
+[07:59:05.855] [DEBUG] Executing command: pnpm install
+[07:59:06.197] [INFO] Installing dependencies...: Progress: resolved 1, reused 0, downloaded 0, added 0
+
+[07:59:06.197] [INFO] Installing dependencies...: Progress: resolved 1, reu
+[07:59:07.197] [INFO] Installing dependencies...: Progress: resolved 14, reused 9, downloaded 3, added 0
+
+[07:59:07.197] [INFO] Installing dependencies...: Progress: resolved 14, re
+[07:59:08.198] [INFO] Installing dependencies...: Progress: resolved 17, reused 9, downloaded 7, added 0
+
+[07:59:08.198] [INFO] Installing dependencies...: Progress: resolved 17, re
+[07:59:09.215] [INFO] Installing dependencies...: Progress: resolved 28, reused 10, downloaded 8, added 0
+
+[07:59:09.215] [INFO] Installing dependencies...: Progress: resolved 28, re
+[07:59:10.216] [INFO] Installing dependencies...: Progress: resolved 136, reused 46, downloaded 46, added 0
+
+[07:59:10.216] [INFO] Installing dependencies...: Progress: resolved 136, r
+[07:59:11.216] [INFO] Installing dependencies...: Progress: resolved 213, reused 46, downloaded 96, added 0
+
+[07:59:11.216] [INFO] Installing dependencies...: Progress: resolved 213, r
+[07:59:12.216] [INFO] Installing dependencies...: Progress: resolved 233, reused 46, downloaded 127, added 0
+
+[07:59:12.216] [INFO] Installing dependencies...: Progress: resolved 233, r
+[07:59:13.216] [INFO] Installing dependencies...: Progress: resolved 286, reused 46, downloaded 178, added 0
+
+[07:59:13.216] [INFO] Installing dependencies...: Progress: resolved 286, r
+[07:59:14.215] [INFO] Installing dependencies...: Progress: resolved 294, reused 46, downloaded 186, added 0
+
+[07:59:14.215] [INFO] Installing dependencies...: Progress: resolved 294, r
+[07:59:15.216] [INFO] Installing dependencies...: Progress: resolved 300, reused 46, downloaded 194, added 0
+
+[07:59:15.216] [INFO] Installing dependencies...: Progress: resolved 300, r
+[07:59:15.335] [INFO] Installing dependencies...: Packages: +198 -3
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--
+
+[07:59:15.335] [INFO] Installing dependencies...: Packages: +198 -3
++++++++
+[07:59:15.636] [INFO] Installing dependencies...: Progress: resolved 300, reused 46, downloaded 194, added 198, done
+
+[07:59:15.636] [INFO] Installing dependencies...: Progress: resolved 300, r
+[07:59:15.709] [INFO] Installing dependencies...: 
+devDependencies:
++ @chromatic-com/storybook 5.1.2
++ @storybook/addon-a11y 10.3.6
++ @storybook/addon-docs 10.3.6
++ @storybook/addon-onboarding 10.3.6
++ @storybook/addon-vitest 10.3.6
++ @storybook/react-vite 10.3.6
++ @vitest/browser-playwright 4.1.5
++ @vitest/coverage-v8 4.1.5
++ playwright 1.59.1
++ storybook 10.3.6
++ vitest 4.1.5
+
+
+[07:59:15.709] [INFO] Installing dependencies...: devDependencies:
++ @chrom
+[07:59:15.720] [INFO] Installing dependencies...:  ERR_PNPM_IGNORED_BUILDS  Ignored build scripts: esbuild@0.27.7
+
+Run "pnpm approve-builds" to pick which dependencies should be allowed to run scripts.
+
+[07:59:15.720] [INFO] Installing dependencies...: ERR_PNPM_IGNORED_BUILDS  
+[07:59:15.779] [ERROR] Installation of dependencies failed! {"error":"ExecaError: Command failed with exit code 1: pnpm install\n\nProgress: resolved 1, reused 0, downloaded 0, added 0\nProgress: resolved 14, reused 9, downloaded 3, added 0\nProgress: resolved 17, reused 9, downloaded 7, added 0\nProgress: resolved 28, reused 10, downloaded 8, added 0\nProgress: resolved 136, reused 46, downloaded 46, added 0\nProgress: resolved 213, reused 46, downloaded 96, added 0\nProgress: resolved 233, reused 46, downloaded 127, added 0\nProgress: resolved 286, reused 46, downloaded 178, added 0\nProgress: resolved 294, reused 46, downloaded 186, added 0\nProgress: resolved 300, reused 46, downloaded 194, added 0\nPackages: +198 -3\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--\nProgress: resolved 300, reused 46, downloaded 194, added 198, done\n\ndevDependencies:\n+ @chromatic-com/storybook 5.1.2\n+ @storybook/addon-a11y 10.3.6\n+ @storybook/addon-docs 10.3.6\n+ @storybook/addon-onboarding 10.3.6\n+ @storybook/addon-vitest 10.3.6\n+ @storybook/react-vite 10.3.6\n+ @vitest/browser-playwright 4.1.5\n+ @vitest/coverage-v8 4.1.5\n+ playwright 1.59.1\n+ storybook 10.3.6\n+ vitest 4.1.5\n\n\\u2009ERR_PNPM_IGNORED_BUILDS\\u2009 Ignored build scripts: esbuild@0.27.7\n\nRun \"pnpm approve-builds\" to pick which dependencies should be allowed to run scripts.\n    at getFinalError (file:///Users/madhouse/.npm/_npx/a5054e465ccef707/node_modules/storybook/dist/_node-chunks/chunk-H4PWFMMO.js:13134:10)\n    at makeError (file:///Users/madhouse/.npm/_npx/a5054e465ccef707/node_modules/storybook/dist/_node-chunks/chunk-H4PWFMMO.js:14670:15)\n    at getAsyncResult (file:///Users/madhouse/.npm/_npx/a5054e465ccef707/node_modules/storybook/dist/_node-chunks/chunk-H4PWFMMO.js:17316:158)\n    at handlePromise (file:///Users/madhouse/.npm/_npx/a5054e465ccef707/node_modules/storybook/dist/_node-chunks/chunk-H4PWFMMO.js:17302:162)\n    at async Object.executeTaskWithSpinner (file:///Users/madhouse/.npm/_npx/a5054e465ccef707/node_modules/storybook/dist/_node-chunks/chunk-O2B7U3US.js:3683:11)\n    at async PNPMProxy.installDependencies (file:///Users/madhouse/.npm/_npx/a5054e465ccef707/node_modules/storybook/dist/_node-chunks/chunk-H4PWFMMO.js:11279:5)\n    at async DependencyInstallationCommand.execute (file:///Users/madhouse/.npm/_npx/a5054e465ccef707/node_modules/create-storybook/dist/_node-chunks/chunk-VQR5SPKR.js:2118:9)\n    at async doInitiate (file:///Users/madhouse/.npm/_npx/a5054e465ccef707/node_modules/create-storybook/dist/_node-chunks/chunk-VQR5SPKR.js:2894:38)\n    at async file:///Users/madhouse/.npm/_npx/a5054e465ccef707/node_modules/create-storybook/dist/_node-chunks/chunk-VQR5SPKR.js:2928:20\n    at async withTelemetry (file:///Users/madhouse/.npm/_npx/a5054e465ccef707/node_modules/storybook/dist/_node-chunks/chunk-UYONHJJP.js:225:12)"}
+[07:59:15.779] [ERROR] Installation of dependencies failed!
+[07:59:15.781] [INFO] Configuring @chromatic-com/storybook...
+[07:59:15.781] [INFO] @chromatic-com/storybook configured
+
+[07:59:15.781] [INFO] Configuring @storybook/addon-vitest...
+[07:59:15.782] [DEBUG] Getting package.json info for /Users/madhouse/projects/comp-lib/package.json...
+[07:59:15.782] [DEBUG] Using cached package.json for /Users/madhouse/projects/comp-lib/package.json...
+[07:59:15.782] [DEBUG] Using cached installed version for vitest...
+[07:59:15.782] [DEBUG] Vitest version specifier: 4.1.5
+[07:59:15.841] [DEBUG] Using cached installed version for vitest...
+[07:59:15.841] [DEBUG] Using cached installed version for msw...
+[07:59:15.853] [INFO] Updating your Vite config file:
+[07:59:15.854] [INFO]   /Users/madhouse/projects/comp-lib/vite.config.ts
+[07:59:15.862] [INFO] Setting up a11y addon for @storybook/addon-vitest
+[07:59:15.862] [INFO] Setting up a11y addon for @storybook/addon-vitest
+[07:59:15.862] [DEBUG] Executing command: pnpm dlx storybook@10.3.6 automigrate addon-a11y-addon-test --loglevel silent --yes --skip-doctor --package-manager pnpm --skip-install
+[07:59:16.924] [ERROR] Failed to setup a11y addon for @storybook/addon-vitest {"error":"ExecaError: Command failed with exit code 1: pnpm dlx 'storybook@10.3.6' automigrate addon-a11y-addon-test --loglevel silent --yes --skip-doctor --package-manager pnpm --skip-install\n    at getFinalError (file:///Users/madhouse/.npm/_npx/a5054e465ccef707/node_modules/storybook/dist/_node-chunks/chunk-H4PWFMMO.js:13134:10)\n    at makeError (file:///Users/madhouse/.npm/_npx/a5054e465ccef707/node_modules/storybook/dist/_node-chunks/chunk-H4PWFMMO.js:14670:15)\n    at getAsyncResult (file:///Users/madhouse/.npm/_npx/a5054e465ccef707/node_modules/storybook/dist/_node-chunks/chunk-H4PWFMMO.js:17316:158)\n    at handlePromise (file:///Users/madhouse/.npm/_npx/a5054e465ccef707/node_modules/storybook/dist/_node-chunks/chunk-H4PWFMMO.js:17302:162)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async Object.executeTask (file:///Users/madhouse/.npm/_npx/a5054e465ccef707/node_modules/storybook/dist/_node-chunks/chunk-O2B7U3US.js:3650:11)\n    at async postInstall (file:///Users/madhouse/.npm/_npx/a5054e465ccef707/node_modules/create-storybook/dist/_node-chunks/chunk-VQR5SPKR.js:1900:234)\n    at async AddonConfigurationCommand.configureAddons (file:///Users/madhouse/.npm/_npx/a5054e465ccef707/node_modules/create-storybook/dist/_node-chunks/chunk-VQR5SPKR.js:2063:47)\n    at async AddonConfigurationCommand.execute (file:///Users/madhouse/.npm/_npx/a5054e465ccef707/node_modules/create-storybook/dist/_node-chunks/chunk-VQR5SPKR.js:2013:43)\n    at async doInitiate (file:///Users/madhouse/.npm/_npx/a5054e465ccef707/node_modules/create-storybook/dist/_node-chunks/chunk-VQR5SPKR.js:2900:38)"}
+[07:59:16.924] [INFO] Command failed with exit code 1: pnpm dlx 'storybook@10.3.6' automigrate addon-a11y-addon-test --loglevel silent --yes --skip-doctor --package-manager pnpm --skip-install
+[07:59:16.924] [ERROR] Could not automatically set up @storybook/addon-a11y for @storybook/addon-vitest.
+Please refer to the documentation to complete the setup manually:
+https://storybook.js.org/docs/writing-tests/accessibility-testing#integration-with-vitest-addon
+[07:59:16.925] [WARN] Done, but with errors!
+@storybook/addon-vitest was installed successfully, but there were some errors during the setup process. Please refer to the documentation to complete the setup manually and check the errors above:
+https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon#manual-setup-advanced
+[07:59:16.925] [DEBUG] {
+  "data": {
+    "errors": [
+      {
+        "data": {
+          "error": {
+            "shortMessage": "Command failed with exit code 1: pnpm dlx 'storybook@10.3.6' automigrate addon-a11y-addon-test --loglevel silent --yes --skip-doctor --package-manager pnpm --skip-install",
+            "command": "pnpm dlx storybook@10.3.6 automigrate addon-a11y-addon-test --loglevel silent --yes --skip-doctor --package-manager pnpm --skip-install",
+            "escapedCommand": "pnpm dlx 'storybook@10.3.6' automigrate addon-a11y-addon-test --loglevel silent --yes --skip-doctor --package-manager pnpm --skip-install",
+            "cwd": "/Users/madhouse/projects/comp-lib",
+            "durationMs": 1061.626042,
+            "failed": true,
+            "timedOut": false,
+            "isCanceled": false,
+            "isGracefullyCanceled": false,
+            "isTerminated": false,
+            "isMaxBuffer": false,
+            "isForcefullyTerminated": false,
+            "exitCode": 1,
+            "stdio": [
+              null,
+              null,
+              null
+            ],
+            "ipcOutput": [],
+            "pipedFrom": []
+          }
+        },
+        "fromStorybook": true,
+        "isHandledError": true,
+        "subErrors": [],
+        "category": "CLI_INIT",
+        "documentation": false,
+        "code": 6,
+        "_name": "AddonVitestPostinstallFailedAddonA11yError"
+      }
+    ]
+  },
+  "fromStorybook": true,
+  "isHandledError": true,
+  "subErrors": [
+    {
+      "data": {
+        "error": {
+          "shortMessage": "Command failed with exit code 1: pnpm dlx 'storybook@10.3.6' automigrate addon-a11y-addon-test --loglevel silent --yes --skip-doctor --package-manager pnpm --skip-install",
+          "command": "pnpm dlx storybook@10.3.6 automigrate addon-a11y-addon-test --loglevel silent --yes --skip-doctor --package-manager pnpm --skip-install",
+          "escapedCommand": "pnpm dlx 'storybook@10.3.6' automigrate addon-a11y-addon-test --loglevel silent --yes --skip-doctor --package-manager pnpm --skip-install",
+          "cwd": "/Users/madhouse/projects/comp-lib",
+          "durationMs": 1061.626042,
+          "failed": true,
+          "timedOut": false,
+          "isCanceled": false,
+          "isGracefullyCanceled": false,
+          "isTerminated": false,
+          "isMaxBuffer": false,
+          "isForcefullyTerminated": false,
+          "exitCode": 1,
+          "stdio": [
+            null,
+            null,
+            null
+          ],
+          "ipcOutput": [],
+          "pipedFrom": []
+        }
+      },
+      "fromStorybook": true,
+      "isHandledError": true,
+      "subErrors": [],
+      "category": "CLI_INIT",
+      "documentation": false,
+      "code": 6,
+      "_name": "AddonVitestPostinstallFailedAddonA11yError"
+    }
+  ],
+  "category": "CLI_INIT",
+  "documentation": false,
+  "code": 5,
+  "_name": "AddonVitestPostinstallError"
+}
+[07:59:16.925] [INFO] Configuring @storybook/addon-a11y...
+[07:59:16.925] [DEBUG] Executing command: pnpm dlx storybook@10.3.6 automigrate addon-a11y-addon-test --loglevel silent --skip-doctor --yes --package-manager pnpm --config-dir .storybook
+[07:59:17.622] [DEBUG] {
+  "shortMessage": "Command failed with exit code 1: pnpm dlx 'storybook@10.3.6' automigrate addon-a11y-addon-test --loglevel silent --skip-doctor --yes --package-manager pnpm --config-dir .storybook",
+  "command": "pnpm dlx storybook@10.3.6 automigrate addon-a11y-addon-test --loglevel silent --skip-doctor --yes --package-manager pnpm --config-dir .storybook",
+  "escapedCommand": "pnpm dlx 'storybook@10.3.6' automigrate addon-a11y-addon-test --loglevel silent --skip-doctor --yes --package-manager pnpm --config-dir .storybook",
+  "cwd": "/Users/madhouse/projects/comp-lib",
+  "durationMs": 696.251792,
+  "failed": true,
+  "timedOut": false,
+  "isCanceled": false,
+  "isGracefullyCanceled": false,
+  "isTerminated": false,
+  "isMaxBuffer": false,
+  "isForcefullyTerminated": false,
+  "exitCode": 1,
+  "stdout": "",
+  "stderr": "Progress: resolved 1, reused 0, downloaded 0, added 0\nPackages: +67\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\nProgress: resolved 92, reused 67, downloaded 0, added 0, done\n ERR_PNPM_IGNORED_BUILDS  Ignored build scripts: esbuild@0.27.7\n\nRun \"pnpm approve-builds\" to pick which dependencies should be allowed to run scripts.",
+  "stdio": [
+    null,
+    "",
+    "Progress: resolved 1, reused 0, downloaded 0, added 0\nPackages: +67\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\nProgress: resolved 92, reused 67, downloaded 0, added 0, done\n ERR_PNPM_IGNORED_BUILDS  Ignored build scripts: esbuild@0.27.7\n\nRun \"pnpm approve-builds\" to pick which dependencies should be allowed to run scripts."
+  ],
+  "ipcOutput": [],
+  "pipedFrom": []
+}
+[07:59:17.622] [INFO] Configuring @storybook/addon-docs...
+[07:59:17.622] [INFO] @storybook/addon-docs configured
+
+[07:59:17.622] [INFO] Configuring @storybook/addon-onboarding...
+[07:59:17.623] [INFO] @storybook/addon-onboarding configured
+
+[07:59:17.623] [INFO] Failed to configure addons
+[07:59:17.623] [INFO] ✅ @chromatic-com/storybook
+[07:59:17.623] [INFO] ❌ @storybook/addon-vitest
+[07:59:17.623] [INFO] ❌ @storybook/addon-a11y
+[07:59:17.623] [INFO] ✅ @storybook/addon-docs
+[07:59:17.623] [INFO] ✅ @storybook/addon-onboarding
+[07:59:17.623] [INFO] Installing Playwright browser binaries (press "c" to abort)
+[07:59:17.623] [INFO] Installing Playwright browser binaries (press "c" to abort)
+[07:59:17.623] [DEBUG] Executing command: pnpm exec playwright install chromium --with-deps
+[07:59:18.218] [INFO] Installing Playwright browser binaries (press "c" to abort): Lockfile is up to date, resolution step is skipped
+
+[07:59:18.218] [INFO] Installing Playwright browser binaries (press "c" to abort): Lockfile is up to date, r
+[07:59:18.232] [INFO] Installing Playwright browser binaries (press "c" to abort): Already up to date
+
+[07:59:18.232] [INFO] Installing Playwright browser binaries (press "c" to abort): Already up to date
+[07:59:18.312] [INFO] Installing Playwright browser binaries (press "c" to abort): 
+
+[07:59:18.312] [INFO] Installing Playwright browser binaries (press "c" to abort): 
+[07:59:18.331] [INFO] Installing Playwright browser binaries (press "c" to abort):  ERR_PNPM_IGNORED_BUILDS  Ignored build scripts: esbuild@0.27.7
+
+Run "pnpm approve-builds" to pick which dependencies should be allowed to run scripts.
+
+[07:59:18.331] [INFO] Installing Playwright browser binaries (press "c" to abort): ERR_PNPM_IGNORED_BUILDS  
+[07:59:18.363] [INFO] Installing Playwright browser binaries (press "c" to abort):  ERROR  Command failed with exit code 1: pnpm install
+
+pnpm: Command failed with exit code 1: pnpm install
+    at getFinalError (file:///opt/homebrew/Cellar/pnpm/11.0.4/libexec/lib/node_modules/pnpm/dist/pnpm.mjs:28540:14)
+    at makeError (file:///opt/homebrew/Cellar/pnpm/11.0.4/libexec/lib/node_modules/pnpm/dist/pnpm.mjs:30847:21)
+    at getSyncResult (file:///opt/homebrew/Cellar/pnpm/11.0.4/libexec/lib/node_modules/pnpm/dist/pnpm.mjs:32691:10)
+    at spawnSubprocessSync (file:///opt/homebrew/Cellar/pnpm/11.0.4/libexec/lib/node_modules/pnpm/dist/pnpm.mjs:32651:14)
+    at execaCoreSync (file:///opt/homebrew/Cellar/pnpm/11.0.4/libexec/lib/node_modules/pnpm/dist/pnpm.mjs:32581:23)
+    at callBoundExeca (file:///opt/homebrew/Cellar/pnpm/11.0.4/libexec/lib/node_modules/pnpm/dist/pnpm.mjs:35109:23)
+    at boundExeca (file:///opt/homebrew/Cellar/pnpm/11.0.4/libexec/lib/node_modules/pnpm/dist/pnpm.mjs:35086:49)
+    at sync (file:///opt/homebrew/Cellar/pnpm/11.0.4/libexec/lib/node_modules/pnpm/dist/pnpm.mjs:35241:14)
+    at runPnpmCli (file:///opt/homebrew/Cellar/pnpm/11.0.4/libexec/lib/node_modules/pnpm/dist/pnpm.mjs:208139:5)
+    at runDepsStatusCheck (file:///opt/homebrew/Cellar/pnpm/11.0.4/libexec/lib/node_modules/pnpm/dist/pnpm.mjs:209800:7)
+
+[07:59:18.363] [INFO] Installing Playwright browser binaries (press "c" to abort): ERROR  Command failed wit
+[07:59:18.382] [ERROR] An error occurred while installing Playwright browser binaries. Please run the following command later: pnpm exec playwright install chromium --with-deps {"error":"ExecaError: Command failed with exit code 1: pnpm exec playwright install chromium --with-deps\n\nLockfile is up to date, resolution step is skipped\nAlready up to date\n\n\\u2009ERR_PNPM_IGNORED_BUILDS\\u2009 Ignored build scripts: esbuild@0.27.7\n\nRun \"pnpm approve-builds\" to pick which dependencies should be allowed to run scripts.\n\\u2009ERROR\\u2009 Command failed with exit code 1: pnpm install\n\npnpm: Command failed with exit code 1: pnpm install\n    at getFinalError (file:///opt/homebrew/Cellar/pnpm/11.0.4/libexec/lib/node_modules/pnpm/dist/pnpm.mjs:28540:14)\n    at makeError (file:///opt/homebrew/Cellar/pnpm/11.0.4/libexec/lib/node_modules/pnpm/dist/pnpm.mjs:30847:21)\n    at getSyncResult (file:///opt/homebrew/Cellar/pnpm/11.0.4/libexec/lib/node_modules/pnpm/dist/pnpm.mjs:32691:10)\n    at spawnSubprocessSync (file:///opt/homebrew/Cellar/pnpm/11.0.4/libexec/lib/node_modules/pnpm/dist/pnpm.mjs:32651:14)\n    at execaCoreSync (file:///opt/homebrew/Cellar/pnpm/11.0.4/libexec/lib/node_modules/pnpm/dist/pnpm.mjs:32581:23)\n    at callBoundExeca (file:///opt/homebrew/Cellar/pnpm/11.0.4/libexec/lib/node_modules/pnpm/dist/pnpm.mjs:35109:23)\n    at boundExeca (file:///opt/homebrew/Cellar/pnpm/11.0.4/libexec/lib/node_modules/pnpm/dist/pnpm.mjs:35086:49)\n    at sync (file:///opt/homebrew/Cellar/pnpm/11.0.4/libexec/lib/node_modules/pnpm/dist/pnpm.mjs:35241:14)\n    at runPnpmCli (file:///opt/homebrew/Cellar/pnpm/11.0.4/libexec/lib/node_modules/pnpm/dist/pnpm.mjs:208139:5)\n    at runDepsStatusCheck (file:///opt/homebrew/Cellar/pnpm/11.0.4/libexec/lib/node_modules/pnpm/dist/pnpm.mjs:209800:7)\n    at getFinalError (file:///Users/madhouse/.npm/_npx/a5054e465ccef707/node_modules/storybook/dist/_node-chunks/chunk-H4PWFMMO.js:13134:10)\n    at makeError (file:///Users/madhouse/.npm/_npx/a5054e465ccef707/node_modules/storybook/dist/_node-chunks/chunk-H4PWFMMO.js:14670:15)\n    at getAsyncResult (file:///Users/madhouse/.npm/_npx/a5054e465ccef707/node_modules/storybook/dist/_node-chunks/chunk-H4PWFMMO.js:17316:158)\n    at handlePromise (file:///Users/madhouse/.npm/_npx/a5054e465ccef707/node_modules/storybook/dist/_node-chunks/chunk-H4PWFMMO.js:17302:162)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async Object.executeTaskWithSpinner (file:///Users/madhouse/.npm/_npx/a5054e465ccef707/node_modules/storybook/dist/_node-chunks/chunk-O2B7U3US.js:3683:11)\n    at async AddonVitestService.installPlaywright (file:///Users/madhouse/.npm/_npx/a5054e465ccef707/node_modules/storybook/dist/_node-chunks/chunk-M6BD6GI2.js:5858:17)\n    at async AddonConfigurationCommand.execute (file:///Users/madhouse/.npm/_npx/a5054e465ccef707/node_modules/create-storybook/dist/_node-chunks/chunk-VQR5SPKR.js:2015:26)\n    at async doInitiate (file:///Users/madhouse/.npm/_npx/a5054e465ccef707/node_modules/create-storybook/dist/_node-chunks/chunk-VQR5SPKR.js:2900:38)\n    at async file:///Users/madhouse/.npm/_npx/a5054e465ccef707/node_modules/create-storybook/dist/_node-chunks/chunk-VQR5SPKR.js:2928:20"}
+[07:59:18.382] [ERROR] An error occurred while installing Playwright browser binaries. Please run the following command later: pnpm exec playwright install chromium --with-deps
+[07:59:18.382] [INFO] Storybook collects completely anonymous usage telemetry. We use it to shape Storybook's roadmap and prioritize features. You can learn more, including how to opt out, at https://storybook.js.org/telemetry
+[07:59:18.983] [WARN] Storybook setup completed, but some non-blocking errors occurred. Please check the log file below for details.
+[07:59:18.983] [INFO] To run Storybook manually, run pnpm run storybook. CTRL+C to stop.
+[07:59:18.983] [INFO] Want to learn more about Storybook? https://storybook.js.org/
+Having trouble or want to chat? https://discord.gg/storybook/
