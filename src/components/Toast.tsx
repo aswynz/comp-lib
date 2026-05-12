@@ -53,7 +53,7 @@ export function Toast({
     <div
       role="status"
       aria-live="polite"
-      className={`flex items-center gap-3 rounded-lg border-l-4 px-4 py-3 shadow-sm ${variantStyles[variant]}`}
+      className={`flex items-center gap-3 rounded-md border-l-4 px-4 py-3 shadow-sm ${variantStyles[variant]}`}
     >
       {resolvedIcon !== null && (
         <span aria-hidden="true" className="shrink-0 text-lg leading-none">
