@@ -1,0 +1,82 @@
+{/* ToastProvider.mdx — API documentation for library consumers.
+    MDX in Storybook is Markdown + JSX. The Meta import below places
+    this page in the sidebar. It's not a story file — no named exports. */}
+
+import { Meta, Canvas } from '@storybook/addon-docs/blocks'
+import * as ToastProviderStories from './ToastProvider.stories'
+import * as ToastStories from './Toast.stories'
+
+<Meta title="Components/ToastProvider/Docs" />
+
+# ToastProvider
+
+Manages a queue of toast notifications with auto-dismiss, stacking, and manual dismissal.
+
+## Setup
+
+Wrap your app (or the relevant subtree) once at the root:
+
+```tsx
+import { ToastProvider } from './components/ToastProvider'
+
+function App() {
+  return (
+    <ToastProvider>
+      <YourApp />
+    </ToastProvider>
+  )
+}
+```
+
+## useToast()
+
+Call `useToast()` anywhere inside the provider tree to get `add` and `dismiss`.
+
+```tsx
+import { useToast } from './components/ToastProvider'
+
+function SaveButton() {
+  const { add } = useToast()
+
+  const handleSave = async () => {
+    await save()
+    add({ variant: 'success', message: 'Changes saved!' })
+  }
+
+  return <button onClick={handleSave}>Save</button>
+}
+```
+
+### `add(toast)`
+
+| Param | Type | Required | Default | Description |
+|---|---|---|---|---|
+| `variant` | `'success' \| 'error' \| 'warning' \| 'info'` | Yes | — | Visual style |
+| `message` | `string` | Yes | — | Notification text |
+| `duration` | `number` (ms) | No | `4000` | Auto-dismiss delay. `0` = never dismiss |
+
+Returns a `string` ID you can pass to `dismiss()` if you need to remove it programmatically.
+
+### `dismiss(id)`
+
+Removes the toast with the given ID immediately. Safe to call with a non-existent ID (no-op).
+
+## Live demo
+
+<Canvas of={ToastProviderStories.Interactive} />
+
+## Stacked toasts
+
+When multiple toasts are added in quick succession, they stack vertically:
+
+<Canvas of={ToastProviderStories.Stacked} />
+
+## Individual Toast variants
+
+The `Toast` component can also be used standalone if you need to render a
+notification in a fixed location (e.g. inside a form panel):
+
+<Canvas of={ToastStories.Success} />
+<Canvas of={ToastStories.Error} />
+<Canvas of={ToastStories.Warning} />
+<Canvas of={ToastStories.Info} />
