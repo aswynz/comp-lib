@@ -20,7 +20,7 @@ Built a Toast notification component library from scratch to understand the deve
 
 ## Where Storybook is awkward
 
-**Setup friction.** The `npx storybook@latest init` scaffold is good, but it assumes npm/yarn. With pnpm 11's strict build-script security model, you spend time approving esbuild builds (`pnpm-workspace.yaml allowBuilds`) before anything works. This is fixable but opaque — the error message points you to `pnpm approve-builds` rather than the workspace config.
+**Setup friction is a pnpm problem, not a Storybook problem.** The `npx storybook@latest init` scaffold worked immediately and auto-detected the Vite + React + TS stack. The friction came entirely from pnpm 11's strict build-script security model — approving esbuild builds via `pnpm-workspace.yaml allowBuilds`. On npm or yarn this step doesn't exist. If your team uses pnpm 9+, budget 30 minutes for this one-time setup.
 
 **Version mismatches across the ecosystem.** Storybook 10 ships its types across multiple packages (`@storybook/react-vite`, `@storybook/test`, `@storybook/blocks`, `@storybook/addon-docs/blocks`). The `init` script doesn't install all of them, so you hit "Cannot find module" errors when you write your first story that uses a feature not covered by the scaffold. Each error is fixable, but a new user hits several in a row.
 
@@ -40,7 +40,9 @@ Built a Toast notification component library from scratch to understand the deve
 
 **Baseline management.** The "accept = new baseline" model is simple but powerful. You're not writing assertions about pixel values — you're saying "this is correct now, alert me if it changes."
 
-**CI integration with PR status checks.** Once wired into GitHub Actions, Chromatic posts a required status check on every PR. A visual change can't be merged without a human reviewing it. This enforces the review workflow without relying on team discipline.
+**CI integration with PR status checks.** Once wired into GitHub Actions, Chromatic posts a required status check on every PR. A visual change can't be merged without a human reviewing it. This enforces the review workflow without relying on team discipline. The moment the status check appeared on the GitHub PR and linked directly to the Chromatic build was a clear "aha" — the loop between code change, visual diff, and merge gate is tangible in a way that text-based CI checks aren't.
+
+**Where the GitHub integration has gaps.** Chromatic posts a UI Test check and a UI Review check separately, but neither links directly to the UI Review page — you have to navigate there from the Chromatic dashboard. This is a context switch that isn't well-signposted. Additionally, if the GitHub App isn't connected before the first build runs, Chromatic may not track the PR lifecycle correctly: merged PRs can show an "Unmerged" label on their builds indefinitely. The label is small and easy to miss, but it's misleading — it implies a change is pending when it's already shipped.
 
 **TurboSnap.** The `--only-changed` flag traces the import graph and only re-snapshots stories affected by the diff. On a large design system (hundreds of components), this is the difference between a 2-minute CI step and a 20-minute one. Also directly controls Chromatic snapshot costs, which are billed per snapshot.
 
