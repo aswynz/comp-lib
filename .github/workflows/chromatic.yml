@@ -1,0 +1,52 @@
+name: Chromatic
+
+# Run on every push to any branch, and on PRs targeting main.
+# This gives you a Chromatic build (and PR status check) on every PR.
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  chromatic:
+    name: Visual tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # fetchDepth: 0 gives Chromatic the full git history.
+          # Without this, shallow clones break TurboSnap's change detection
+          # because it can't trace which files changed relative to the baseline.
+          fetch-depth: 0
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Run Chromatic
+        uses: chromaui/action@latest
+        with:
+          # Reads CHROMATIC_PROJECT_TOKEN from GitHub secrets —
+          # never hardcode the token in this file.
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          # TurboSnap: only re-snapshot stories affected by changed files.
+          # Chromatic traces imports — if Button.tsx didn't change,
+          # Button stories are skipped entirely. Big cost saving at scale.
+          onlyChanged: true
+          # Exit 0 on visual changes so the workflow itself passes —
+          # the PR status check handles blocking the merge, not this exit code.
+          exitZeroOnChanges: true
